@@ -33,7 +33,7 @@ def student_form(request, id=0):
                 obj.student_no = student_no
                 print("Counter after increment is {0:03}".format(last_serial.counter))
                 obj.save()
-        #else try to retrieve the user info as it is a returning user
+        #else try to retrieve the user info as it is a returning user. 
         else:
             #try:
             print('trying to retrieve user')
