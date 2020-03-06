@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Student, Counting, Course
 
 class StudentAdmin(admin.ModelAdmin):
-	list_display = ['fullname','student_no','course','score', 'grade', 'created_at', 'updated_at']
+	list_display = ['name','student_no','course','score', 'grade', 'created_at', 'updated_at']
 
 admin.site.register(Student, StudentAdmin)
 

@@ -14,7 +14,7 @@ class Counting(models.Model):
         return str(self.counter)
 
 class Student(models.Model):
-    fullname = models.CharField(max_length=100)
+    name = models.CharField(max_length=100)
     course = models.ForeignKey(Course,on_delete=models.CASCADE)
     score = models.CharField(max_length=15)
     #grade = models.CharField(max_length=15)
